@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>panier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../style.css">
+        
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-dark px-5 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-secondary fw-lighter" href="../index.html"><i class="fa fa-code-fork"></i>&nbsp;Parlons
+                Code</a>
+            <button class="navbar-toggler text-white bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-lighter" aria-current="page" href="../index.html?#formation">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-lighter" href="../atelier/atelier.html">Ateliers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-lighter" href="../podcasts/podcasts.html">Podcasts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-lighter" href="../livres/livre.html">Livres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary fw-lighter" href="../connexion/connexion.html">Se connecter</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 px-5">
+        <div class="text-center">
+
+            <h2 class="fs-2 pt-5"><i class="fa-solid fa-cart-shopping" style="color: rgb(40, 56, 77);"></i></i> Votre Panier</h2>
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 ">
+                <div class="card border-primary">
+                    <div class="card-header  text-white" id="master">
+                        <i class="fa-solid fa-cart-shopping" style="color: white;"></i> Contenu actuel de votre panier
+                    </div>
+                    <div class="card-body">
+                            <ul>
+                                <li>Formation</li>
+                                <li>Quantité</li>
+                                <li>Prix (USD)</li>
+                                <li>Total(USD)</li>
+                            </ul>
+                    </div>
+                    <div class="bg-Light">
+                        <ul>
+                            <li><i class="fa-brands fa-python" style="color: #ffda44;"></i></li>
+                            <li><p>MarterClass Python <br>accés à vie </p></li>
+                            <li> <button id="etat" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >1</button></li>
+                            <li><button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Modifeir</button></li>
+                            <li>$89.00</li>
+                            <li>$89.00</li>
+                            <li><i class="fa-regular fa-rectangle-xmark"></i></li>
+                        </ul>
+                    </div>
+                    <div class="card-body" id="price" >
+                            <p>Sous-total: $89.00</p>
+                    </div>
+                    <div class="card-body" id="soumettre">
+                        <ul>
+                            <li><button type="button" class="btn btn-primary" id="magasiner"><i class="fa-solid fa-cart-shopping" style="color: white;" ></i> CONTINUER A MANGASINER</button></li>
+                            <li><button type="button" class="btn btn-primary" id="payer"><i class="fa-regular fa-credit-card"></i> PAYER MAINTENANT</button></li>
+                        </ul>
+                    </div>
+                        
+                </div>
+                <div class="mb-4"></div>
+
+                <div class="card border-secondary">
+                    <div class="card-header  text-white" id="master">
+                        <i class="fa-solid fa-cart-shopping" style="color: white;"></i> Foire aux Questions (FAQ)
+                    </div>
+                    <div class="card-body">
+                        <h4>Puis-je payer avec Paypal?</h4>
+                        <p class="text-left small">Bien sûr! Le processus n'est pas encore automatisé, mais la manière la plus simple est de nous faire parvenir le montant total de votre commande via notre URL PayPal.me. Veuillez inclure votre adresse e-mail dans la section «instructions spéciales». Nous nous chargerons de vous créer un compte et nous vous enverrons un lien d'accès à l'adresse email qui aura été indiquée.</p>
+                    </div>
+                    <div class="card-body">
+                        <h4>Puis-je payer avec Paypal?</h4>
+                        <p class="text-lefts mall">Bien sûr! Le processus n'est pas automatisé, mais la manière la plus simple est de nous faire parvenir le montant total de votre commande via Western Union ou MoneyGram. Veuillez nous contacter via la page de contact pour plus d'informations concernant les détails pour le transfert. Une fois le paiement confirmé, nous nous chargerons de vous créer un compte et nous vous enverrons un lien d'accès à l'adresse email qui aura été indiquée.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="card " >
+                    <div class="card-header  bg-primary-subtle text-primary-emphasis">
+                        <i class="fa-solid fa-star" style="color: #31708f;"></i> Gagner 20% de réduction
+                    </div>
+                    <div class="card-body ">
+                       <p class="card-text fw-lighter"> Achetez plus d'une formation et vous obtiendrez automatiquement un rabais combiné de 20% sur les cours supplémentaires</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mt-3">
+                        <div class="card-header bg-primary-subtle text-primary-emphasis">
+                            <i class="bi bi-substack"></i> Autres formations
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-12">
+                                    <img src="https://parlonscode.com/icons/courses/java-swing.svg" alt="" width="30px"> <a href="" class="text-decoration-none fw-lighter"> Devenez Swag avec Swing</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="" width="30px"> <a href="" class="text-decoration-none fw-lighter"> Devenez Swag avec Swing</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="" width="30px"> <a href="" class="text-decoration-none fw-lighter"> Devenez Swag avec Swing</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="https://parlonscode.com/icons/courses/symfony-framework.svg" alt="" width="30px"> <a href="" class="text-decoration-none fw-lighter"> Devenez Swag avec Swing</a>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="https://parlonscode.com/icons/courses/python.svg" alt="" width="30px"> <a href="" class="text-decoration-none fw-lighter"> Devenez Swag avec Swing</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3 ">
+                        <div class="card-header bg-primary-subtle text-primary-emphasis" id="master">
+                            <i class="fa-solid fa-star" style="color: #31708f;"></i>  Réductions
+                        </div>
+                        <div class="card-body ">
+                            <p class="card-text fw-lighter"><a href="#">3 manières d'économiser:</a> Nous avons des réductions combinées, des réductions académiques, et des réductions pour les équipes
+                            </p>
+                        </div>
+                    </div>
+            </div>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- section temoignages -->
+
+    <div class="container mt-5 mb-5 text-center">
+        <h2 class=" mb-5 fw-light">Voici ce que disent vos confrères...</h2>
+        <div class="row temoignage-section">
+            <div class="col-md-4 ">
+                <img src="https://parlonscode.com/images/avatars/avatar1.png" alt="">
+                <h4>Acrimonia</h4>
+                <p>Franchement merci pour vos formations! En plus de très bien expliquer les choses, vous êtes marrant
+                    avec toutes vos expressions comme Check-et-bang, Mushibishi :). J'ai bien rigolé. Merci pour tout.
+                </p>
+            </div>
+            <div class="col-md-4 ">
+                <img src="https://parlonscode.com/images/avatars/avatar2.jpg" alt="">
+                <h4>Antonella De Chiara</h4>
+                <p>Je vous remercie vraiment pour tout. En peu de temps, j’ai compris plus de choses avec vos vidéos
+                    qu’avec n’importe quel livre/cours. </p>
+            </div>
+            <div class="col-md-4 ">
+                <img src="https://parlonscode.com/images/avatars/avatar3.png" alt="">
+                <h4>Yahya Gueddouri</h4>
+                <p>Vous êtes le meilleur! J'avais failli abandonner la programmation et grâce à un ami qui m'a fait
+                    connaitre votre site, je m'en sors maintenant. Merci à vous. Que Dieu vous bénisse. </p>
+            </div>
+        </div>
+
+        <a href="" class="btn btn-primary bg-transparent text-primary p-2">Pas encore sûr? Découvrez plus de témoignages
+            »</a>
+    </div>
+
+
+    <footer class="bg-light">
+        <div class="container pt-5">
+
+            <div class="row px-5">
+                <div class="col-md-6 d-flex flex-column fw-lighter">
+                    <h3>Parlons Code</h3>
+                    <span>Apprenez à programmer par la pratique!</span>
+                    <div class=" footer_icon">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-youtube"></i>
+                        <i class="bi bi-github"></i>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column fw-lighter">
+                    <h3>Liens utiles</h3>
+                    <a href="">Formation</a>
+                    <a href="../../podcasts/podcasts.html">Podcasts</a>
+                    <a href="../../livres/livre.html">Livres & Ebooks</a>
+                    <a href="../../page_support_technique/page_support_tec.html">Support technique</a>
+
+                </div>
+                <div class="col-md-3 d-flex flex-column fw-lighter mb-4">
+                    <h3>Autres</h3>
+                    <a href="../../page_a_propoos/a_propos.html">A propos</a>
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        Contact
+                    </button> -->
+                    <a href="#"type="button" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Contact</a>
+                    <div class="modal fade align-content-center" id="staticBackdrop" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-5 diabata ">
+                                    <div class="w-75 " id="popup_text">
+
+                                        <h3><i class="fa fa-code-fork"></i>&nbsp;Parlons code</h3>
+                                        <p> <strong>Les meilleurs tutoriels et formations en ligne</strong></p>
+                                        <a href=""><i class="fa fa-envelope"></i> Envoyer un message</a>
+                                        <p><strong> Service clients</strong></p>
+                                        <a href="mailto:hello@parloncode.com">hello@parlonscode.com</a><br>
+                                        <a href="https//parloncode/facebook.com">facebook.com/parlonscode</a><br>
+                                        <a href="https//parloncode1/twitter.com">twitter.com/parlonscode1</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../../politique_de confidentialite/politique_de_confidentialite.html">Politique de confidentialité</a>
+                    <a href="../../condition_utilisation/contion_utilisation.html">Conditions d'utilisation</a>
+
+                </div>
+                <hr class="mb-4">
+                <div class="col-md-6">
+                    <span><i class="bi bi-bell"></i> Recevez toute l'actualité du site dans votre boîte mail!</span>
+                    <input type="text" class="form-control" placeholder="Veuillez entrer votre adresse email">
+                </div>
+
+                <div class="col-md-4 pt-4">
+                    <button class="btn btn-primary px-5">
+                        <i class="bi bi-envelope-fill"></i> S'abonner à la newsletter
+                    </button>
+                </div>
+
+                <span class="text-center mt-5 fw-lighter opacity-50">Conçu avec <i
+                        class="bi bi-heart-fill text-danger"></i> et beaucoup de <i class="bi bi-cup-fill"></i> sur
+                    Jupiter · © Copyright 2017 ‐ 2023. Tous Droits Réservés.</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

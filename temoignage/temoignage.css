@@ -1,0 +1,17 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+.tatitati{
+    /* background-color: #F9F9F9 ; */
+}
+}
+.img-circle{
+    border-radius: 50%;
+    width:140px;
+    height:140px;
+}
+hr{
+    background-color: darkgray ;
+}

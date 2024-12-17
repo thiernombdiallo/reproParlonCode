@@ -1,0 +1,11 @@
+:root {
+    --gris : #F9F9F9;
+    --bleu : #28384D;
+}
+*{
+    font-family: Gilroy,system-ui,-apple-system,BlinkMacSystemFont,".SFNSText-Regular","Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    color: var(--bleu);
+}
+body{
+    /* background-color: var(--gris); */
+}

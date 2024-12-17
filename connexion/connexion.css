@@ -1,0 +1,25 @@
+/* body{
+    font-family: 'sans serif';
+    background-color: #F9F9F9 !important;
+}
+.container .hrtetu{
+    width: 250%;
+    position: relative;
+    left: -75%;
+    color: darkgray;
+}
+.arc span{
+    font-weight: bold;
+}
+.arc{
+    width: 120%;
+    height: 80px;
+    font-size: 14px;
+    border: 1px solid #F5F5F5;
+    text-align: center;
+    max-height: 50px;
+} */
+
+form{
+    width: 0 auto;
+}

@@ -1,0 +1,53 @@
+:root{
+
+   
+    --color2: #fff;
+    --color4: #dad5ca;
+    --color5: #449d44;
+
+  
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: sans-serif;
+
+}
+.profil-container{
+    margin: 10px;
+}
+.profil-container .bouton{
+    background-color: var(--color5);
+    color: var(--color2);
+
+}
+
+.col1{
+    /* height: 700px; */
+    padding: 1%;
+    padding-left: 200%;
+    border-right: 1px solid var(--color4);
+    border-top: 1px solid var(--color4);
+    /* line-height: 30px; */
+}
+.image{
+    
+    transition: 0.5s;
+    cursor: pointer;
+    
+
+}
+h6:hover{
+    background-color: var(--color2);
+
+}
+.col2{
+    border-top: 1px solid var(--color4);
+    
+}
+.container .btn2{
+    background-color: #fff;
+    color: black;
+    border: 1px solid;
+}

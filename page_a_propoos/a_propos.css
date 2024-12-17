@@ -1,0 +1,52 @@
+body{
+    width: 100%;
+    height: 100%; 
+    font-family: verdana;
+    box-sizing: border-box;
+    justify-content: center;
+    /* padding-top: 10em; */
+}
+
+.divCont{
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+
+}
+.divCadr{
+    justify-content: center;
+    color: #3F55AF;
+    text-align: center;
+    border: solid #3F55AF
+}
+.divCadrBleu{
+    height: 4em;
+    background-color: #3F55AF;
+    
+}
+.divCont h1{
+    color: #3F55AF;
+    font-size: 3em;
+    text-align: center;
+}
+
+.divCont p{
+    color: #3F55AF;
+    text-align: center;
+    font-size: 2rem
+}
+
+
+.divCadrBleu p{
+    color: #ffffff;
+    font-size: 2em;
+    text-align: left;
+}
+
+.vivText{
+    font-size: 2em;
+}
+
+#phtprofil{
+    width: 15em;
+}

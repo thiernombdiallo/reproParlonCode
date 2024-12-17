@@ -1,0 +1,7 @@
+.livre span.status{
+    padding: 2px;
+    background-color: #ffd740;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+}

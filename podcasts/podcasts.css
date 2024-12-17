@@ -1,0 +1,27 @@
+:root {
+    --orange : #eb3500;
+    --gris : #F9F9F9;
+    --bleu : #28384D;
+    --grispod : rgb(245, 245, 245);
+}
+*{
+    font-family: Gilroy,system-ui,-apple-system,BlinkMacSystemFont,".SFNSText-Regular","Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",sans-serif;
+    color: var(--bleu);
+}
+body{
+    background-color: var(--gris);
+}
+.podcastsimage{
+    height: 140px;
+}
+.podcastslien .iconefont p{
+    font-size: 12px;
+    color: black;
+}
+.podcastslien .icone p{
+    color: #877d7d;
+    font-size: 12px;
+}
+.frameposcats{
+    border: 1px solid rgb(233, 229, 229);
+}

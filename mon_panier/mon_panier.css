@@ -1,0 +1,43 @@
+:root {
+    --gris : #F9F9F9;
+    --bleutext : rgb(40, 56, 77);
+    --bleuone : #3F55AF;
+    --bleutwo : #D9EDF7;
+    --hrcolor : #b9b3b3;
+    --petitbloc : #F5F5F5;
+    --jaune : #ffda44;
+}
+.contenu{
+    background-color: var(--bleuone);
+     height: 42px;
+    border-radius: 4px;
+    /* padding-left: 40px;
+    padding-top: 10px; */
+}
+.contenu p{
+   color: white;
+   
+}
+
+.bg-Light {
+    height: 45px;
+    padding-top: 30px;
+} 
+.bg-Light ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bg-Light ul li{
+    list-style: none;
+    font-weight: bold;
+    
+}
+.col-8 hr{
+    border: 1.8px solid var(--hrcolor);
+}
+
+#etat
+{
+    width:120px ;
+}
+
